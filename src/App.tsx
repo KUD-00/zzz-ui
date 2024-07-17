@@ -8,57 +8,57 @@ import { useState, useEffect } from 'react';
 function App() {
   const data = [
     {
-      imgUrl: "/public/cheese.webp",
-      avatarUrl: "/public/avatar.jpeg",
+      imgUrl: "/cheese.webp",
+      avatarUrl: "/avatar.jpeg",
       userName: "メーティス情報屋",
       title: "[情報]旧都の広場で襲撃事件発生",
       content: "数日前、白祈重工...",
     },
     {
-      imgUrl: "/public/tower2.webp",
-      avatarUrl: "/public/car.webp",
+      imgUrl: "/tower2.webp",
+      avatarUrl: "/car.webp",
       userName: "メーティス情報屋",
       title: "[再び][情報]旧都の広場で襲撃事件発生",
       content: "数日前、白祈重工...",
     },
     {
-      imgUrl: "/public/ship.webp",
-      avatarUrl: "/public/cheese.webp",
+      imgUrl: "/ship.webp",
+      avatarUrl: "/cheese.webp",
       userName: "メーティス情報屋",
       title: "[雑談]ウィジョン爆破事件まもなく開廷",
       content: "新エリー都司法府はこのほど...",
     },
     {
-      imgUrl: "/public/dinner.webp",
-      avatarUrl: "/public/avatar.jpeg",
+      imgUrl: "/dinner.webp",
+      avatarUrl: "/avatar.jpeg",
       userName: "センスなくてごめん",
       title: "[雑談]現代アートがよくわからないのって自分だけ？",
       content: "最近、とある展示に行ってき...",
     },
     {
-      imgUrl: "/public/tower.webp",
-      avatarUrl: "/public/police.webp",
+      imgUrl: "/tower.webp",
+      avatarUrl: "/police.webp",
       userName: "メーティス情報屋",
       title: "[情報]旧都の広場で襲撃事件発生",
       content: "数日前、白祈重工...",
     },
     {
-      imgUrl: "/public/owl.webp",
-      avatarUrl: "/public/tower.webp",
+      imgUrl: "/owl.webp",
+      avatarUrl: "/tower.webp",
       userName: "それゆけ！中華まん！",
       title: "[有力情報]ラマニアンホロウの活性に変化！",
       content: "今日確かな筋から仕入れた...",
     },
     {
-      imgUrl: "/public/car.webp",
-      avatarUrl: "/public/avatar.jpeg",
+      imgUrl: "/car.webp",
+      avatarUrl: "/avatar.jpeg",
       userName: "それゆけ！中華まん！",
       title: "[有力情報]ラマニアンホロウの活性に変化！",
       content: "今日確かな筋から仕入れた...",
     },
     {
-      imgUrl: "/public/police.webp",
-      avatarUrl: "/public/owl.webp",
+      imgUrl: "/police.webp",
+      avatarUrl: "/owl.webp",
       userName: "それゆけ！中華まん！",
       title: "[有力情報]ラマニアンホロウの活性に変化！",
       content: "今日確かな筋から仕入れた...",
@@ -84,7 +84,7 @@ function App() {
     <div className="flex flex-col max-w-7xl min-h-screen gap-10 mt-8 mx-auto">
       <header className="flex justify-between items-center">
         <UserIndicator
-          icon="/public/avatar.jpeg"
+          icon="/avatar.jpeg"
           username="kud"
           level={12}
           currentPoints={1200}
