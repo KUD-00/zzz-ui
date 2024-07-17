@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url('/public/background.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+@keyframes pulse {
+  0%, 30%, 100% {
+    transform: scale(1.1);
+  }
+  15% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes colorChange {
+  0%, 100% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: lime;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 0.8s infinite, colorChange 2s infinite;
+  background-size: 200% 200%;
+  animation-timing-function: ease-in-out;
+}
+
+.slanted-both {
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.slanted-right {
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.slanted-left {
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.clip-background {
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  border-top-right-radius: 0.5rem; /* 设置右上圆角 */
+  border-bottom-right-radius: 0.5rem; /* 设置右下圆角 */
+}
